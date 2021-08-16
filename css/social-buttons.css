@@ -709,9 +709,24 @@ a.sb.facebook,
 	background-image: url(images/facebook.png);
 }
 
+a.sb.google-scholar,
+.sb a.google-scholar {
+	background-image: url(images/google-scholar.png);
+}
+
+a.sb.github,
+.sb a.github {
+	background-image: url(images/github.png);
+}
+
 a.sb.heart,
 .sb a.heart {
 	background-image: url(images/heart.png);
+}
+
+a.sb.instagram,
+.sb a.instagram {
+	background-image: url(images/instagram.png);
 }
 
 a.sb.linkedin,

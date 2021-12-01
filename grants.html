@@ -10,14 +10,8 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link href="css/theme.css" rel="stylesheet">
-		<script>
-			function post_content_height(){
-				var actual_height = document.getElementById("content").scrollHeight;
-				parent.postMessage(actual_height+15, "*");
-			}
-		</script>
 	</head>
-	<body onload="post_content_height();">
+	<body>
 		<div class="container">
 			<header class="jumbotron subhead" id="overview">
 				<p class="lead"><img src = "thumbs/nchu-logo.png" alt="research-lab-logo"/></p>

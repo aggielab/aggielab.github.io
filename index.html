@@ -22,6 +22,15 @@
 				var url_page6 = $('#iframe_page6').attr('src');
 				var iframe_id = 'iframe_page0';
 				
+				// remove fragment as much as it can go without adding an entry in browser history:
+				window.location.replace("#");
+				
+				// slice off the remaining '#' in HTML5:
+				if (typeof window.history.replaceState == 'function') {
+					history.replaceState({}, '', window.location.href.slice(0, -1));
+				}
+				
+				// set the default show page the homepage
 				$('iframe').attr('src', '').hide();
 				$('#iframe_page0').attr('src', url_page0).show();
 				
@@ -42,7 +51,6 @@
 					$('#iframe_page2').attr('src', url_page2).show();
 					iframe_id = 'iframe_page2';
 				});
-
 
 				$('#show_page3').click(function(){
 					$('iframe').attr('src', '').hide();
@@ -102,13 +110,13 @@
 					<div class="navbar-inner">
 						<div class="container">
 							<ul class="nav">
-								<li class="active"><a id="show_page0" class="" href="#">Home</a></li>
-								<li><a id="show_page1" class="" href="#">People</a></li>
-								<li><a id="show_page2" class="" href="#">Research</a></li>
-								<li><a id="show_page3" class="" href="#">Publications</a></li>
-								<li><a id="show_page4" class="" href="#">Teaching</a></li>
-								<li><a id="show_page5" class="" href="#">Grants</a></li>
-								<li><a id="show_page6" class="" href="#">Contact</a></li>
+								<li class="active"><a id="show_page0" class="" href="#home">Home</a></li>
+								<li><a id="show_page1" class="" href="#people">People</a></li>
+								<li><a id="show_page2" class="" href="#research">Research</a></li>
+								<li><a id="show_page3" class="" href="#publications">Publications</a></li>
+								<li><a id="show_page4" class="" href="#teaching">Teaching</a></li>
+								<li><a id="show_page5" class="" href="#grants">Grants</a></li>
+								<li><a id="show_page6" class="" href="#contact">Contact</a></li>
 							</ul>
 						</div>
 					</div>

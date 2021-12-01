@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>ACLab</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Research Lab, Home, National Chung Hsing University">
+		<meta name="author" content="">
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">
+		<!-- Le styles -->
+		<link href="pages/css/bootstrap.min.css" rel="stylesheet">
+		<link href="pages/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="pages/css/theme.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var url_page0 = $('#iframe_page0').attr('src');
+				var url_page1 = $('#iframe_page1').attr('src');
+				var url_page2 = $('#iframe_page2').attr('src');
+				var url_page3 = $('#iframe_page3').attr('src');
+				var url_page4 = $('#iframe_page4').attr('src');
+				var url_page5 = $('#iframe_page5').attr('src');
+				var url_page6 = $('#iframe_page6').attr('src');
+				var iframe_id = 'iframe_page0';
+				
+				// remove fragment as much as it can go without adding an entry in browser history:
+				window.location.replace("#");
+				
+				// slice off the remaining '#' in HTML5:
+				if (typeof window.history.replaceState == 'function') {
+					history.replaceState({}, '', window.location.href.slice(0, -1));
+				}
+				
+				// set the default show page the homepage
+				$('iframe').attr('src', '').hide();
+				$('#iframe_page0').attr('src', url_page0).show();
+				
+				$('#show_page0').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_page0').attr('src', url_page0).show();
+					iframe_id = 'iframe_page0';
+				});
+				
+				$('#show_page1').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_page1').attr('src', url_page1).show();
+					iframe_id = 'iframe_page1';
+				});
+				
+				$('#show_page2').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_page2').attr('src', url_page2).show();
+					iframe_id = 'iframe_page2';
+				});
+
+				$('#show_page3').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_page3').attr('src', url_page3).show();
+					iframe_id = 'iframe_page3';
+				});
+				
+				$('#show_page4').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_page4').attr('src', url_page4).show();
+					iframe_id = 'iframe_page4';
+				});
+				
+				$('#show_page5').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_page5').attr('src', url_page5).show();
+					iframe_id = 'iframe_page5';
+				});
+				
+				$('#show_page6').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_page6').attr('src', url_page6).show();
+					iframe_id = 'iframe_page6';
+				});
+
+				$('.nav li').click(function() {
+				      $(this).siblings('li').removeClass('active');
+  				      $(this).addClass('active');
+				});
+				
+
+				// Create IE + others compatible event handler
+				var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+				var eventer = window[eventMethod];
+				var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+				//var frames = document.getElementsByTagName("iframe");
+				//console.log(frames);
+				
+				// Listen to message from child window
+				eventer(messageEvent, function(e) {
+					//console.log('parent received message!:  ',e.data);
+					
+					if (document.getElementById) {
+						document.getElementById(iframe_id).height = e.data;
+					}
+				}, false);
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="jumbotron subhead" id="overview">
+				<p class="lead"><img src = "nchu-logo.png" alt="research-lab-logo"/></p>
+				<h1 style="font-family:Times New Roman;">Advanced Computing Laboratory</h1>
+			</header>
+			<div class="masthead">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="container">
+							<ul class="nav">
+								<li class="active"><a id="show_page0" class="" href="#home">Home</a></li>
+								<li><a id="show_page1" class="" href="#people">People</a></li>
+								<li><a id="show_page2" class="" href="#research">Research</a></li>
+								<li><a id="show_page3" class="" href="#publications">Publications</a></li>
+								<li><a id="show_page4" class="" href="#teaching">Teaching</a></li>
+								<li><a id="show_page5" class="" href="#grants">Grants</a></li>
+								<li><a id="show_page6" class="" href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<iframe id="iframe_page0" width="100%" height="1080 px" src="pages/home.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+			<iframe id="iframe_page1" width="100%" height="1080 px" src="pages/people.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+			<iframe id="iframe_page2" width="100%" height="1080 px" src="pages/research.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+			<iframe id="iframe_page3" width="100%" height="1080 px" src="pages/publications.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+			<iframe id="iframe_page4" width="100%" height="1080 px" src="pages/courses.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+			<iframe id="iframe_page5" width="100%" height="1080 px" src="pages/grants.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+			<iframe id="iframe_page6" width="100%" height="1080 px" src="pages/contact.html" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+		</div>
+		<footer id="footer">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span3">
+						<!-- -->
+					</div>
+					<div class="span6">
+						<!-- -->
+					</div>
+					<div class="span3">
+						<!-- -->
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

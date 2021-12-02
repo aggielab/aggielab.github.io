@@ -19,10 +19,22 @@
 				height: 100px;
 				background: #555;
 			}
+			
 			.overview h1 {
 				position: relative;
 				top: 18px;
 				left: 10px;
+			}
+			
+			.wrap {
+				display: flex;
+				align-items: center;
+			}
+			
+			.col-1, 
+			.col-2 {
+				float: left;
+				width: 50%;
 			}
 		</style>
 	</head>
@@ -88,7 +100,7 @@
 			<div class="container-fluid">
 				<div class="row-fluid marketing">
 					<div class="span12">
-						<p>The Advanced Computing Laboratory belongs to the <a href="http://www.cs.nchu.edu.tw" target="_blank">Department of Computer Science and Engineering</a> at the <a href="https://www.nchu.edu.tw" target="_blank">National Chung Hsing University</a>. In addition to our research in solving various advanced computing problems, we are extensively engaged in interdisciplinary research. Computational solutions for complex problems give us technology strengths, and the interdisciplinary research can leverage these strengths to improve the world. Some research topics being actively pursued include:
+						<p style="text-align: justify;">The Advanced Computing Laboratory (先進計算實驗室) belongs to the <a href="http://www.cs.nchu.edu.tw" target="_blank">Department of Computer Science and Engineering</a> at the National Chung Hsing University (國立中興大學). In addition to our research in solving various advanced computing problems, we are extensively engaged in interdisciplinary research. Computational solutions for complex problems give us technology strengths, and the interdisciplinary research can leverage these strengths to improve the world. Some research topics being actively pursued include:
 							<li>Content Analysis of Digital Documents</li>
 							<li>Engineering Education and Teaching Methods</li>
 							<li>Situational Awareness System Design</li>
@@ -101,10 +113,16 @@
 								<div style="text-align:center;"><h4>Recent News</h4></div>
 								<ol><img src="icon/hot.jpg" width="35" height="25">[10/01/2021] 恭喜劉冠閎學長成功通過碩士論文口試!</ol>
 							</section>
-						 </div>
-						 <hr>
-						 <a href="https://info.flagcounter.com/HUSE"><img src="https://s11.flagcounter.com/map/HUSE/size_s/txt_000000/border_000000/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
-						 <img style="display: inline; float: right;" src = "thumbs/logo.png" width="205" height="205" alt="research-lab-logo" />
+						</div>
+						<hr>
+						<div class="wrap">
+							<div class="col-1">
+								<a href="https://info.flagcounter.com/HUSE"><img src="https://s11.flagcounter.com/map/HUSE/size_s/txt_000000/border_000000/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
+							</div>
+							<div class="col-2">
+								<a href="https://www.nchu.edu.tw" target="_blank"><img style="float: right;" id="NCHULogo" src = "thumbs/nchu-logo.png" alt="research-lab-logo" /></a>
+							</div>
+						</div>
 					</div>
 				</div> 
 			</div>

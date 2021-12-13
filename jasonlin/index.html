@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Jason Lin</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var url_tm = $('#iframe_tm').attr('src');
+				var url_pm = $('#iframe_pm').attr('src');
+				var url_qc = $('#iframe_qc').attr('src');
+				
+				$('iframe').hide();
+				$('button').hide();
+				
+				$('#hide').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('button').hide();
+				});
+				
+				$('#show_tm').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_tm').attr('src', url_tm).show();
+					$('button').show();
+				});
+				
+				$('#show_pm').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_pm').attr('src', url_pm).show();
+					$('button').show();
+				});
+				
+				$('#show_qc').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_qc').attr('src', url_qc).show();
+					$('button').show();
+				});                
+			});
+		</script>
+	</head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<body bgcolor="#E6E6FA">
+		<div>
+			<a class="thumbnail">
+				<img src="profile/me.jpg" alt="Profile picture" height="150" width="150" />
+			</a>
+			<img src="profile/mouse.gif" alt="Scared mouse" height="75" width="75" align="right" style="margin-top: 75px" />
+		</div>
+		<div>
+			<h3>About Me</h3>
+			<p align="justify">Howdy! My name is Jason Lin (林傑森). I graduated from <a href="https://www.tamu.edu" target="_blank">Texas A&M University</a> with a PhD in <a href="https://engineering.tamu.edu/ce/index.html" target="_blank">Computer Engineering</a>.
+			<br>Recently, I joined the <a href="https://www.nchu.edu.tw" target="_blank">National Chung Hsing University</a> (國立中興大學) as a faculty member in the <a href="http://www.cs.nchu.edu.tw" target="_blank">Department of Computer Science and Engineering</a>.
+			<br>I also serve as the supervisor of <a href="https://aggielab.github.io/" target="_blank">Advanced Computing Laboratory</a> under the same department.</p>
+		</div>
+		<div>
+			<h3>Research Interests</h3>
+		</div>
+		<div align="center">
+			<iframe id="iframe_tm" width="854" height="480" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
+			<iframe id="iframe_pm" width="854" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+			<iframe id="iframe_gi" width="854" height="480" src="https://www.youtube.com/embed/-8keqUuxT6Y" frameborder="3" allowfullscreen=""></iframe>
+			<iframe id="iframe_qc" width="854" height="480" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="3" allowfullscreen=""></iframe>
+		</div>
+		<div align="center">
+			<button style="height:25px; width:50px" id="hide">Close</button>
+		</div>
+		<div align="justify">
+            <p align="justify">My research mainly focuses on the fundamental issues of <a id="show_tm" class="" href='#'>Text Mining</a> and the use of <a id="show_pm" class="" href='#'>Process Mining</a> techniques to explore the coreference patterns of textual descriptions and mathematical expressions from scientific documents. 
+            Before diving into this field, I was actively involved in a project sponsored by the ONR, which developed a situational awareness system based on the geospatial analysis of historical conflict events to model the insurgency behavior of asymmetric warfare. 
+            Apart from the above research, I have also studied <a  id="show_qc" class="" href='#'>Quantum Computing</a> and published several significant results in prestigious journals.
+			<br>Please feel free to shoot me an email if you need any further information.</p>
+		</div>
+        <div>
+			<h3>Selected Recent Publications</h3>
+			<ul>
+				<li>C.-W. Tsai, J. Lin, L. Chiu, and C.-W. Yang*, 
+				<br><a href="https://link.springer.com/article/10.1007/s10773-021-04927-5" target="_blank">Cryptanalysis and Improvement in Multi-Party Quantum Key Distribution Protocol with New Bell States Encoding Mode</a>, 
+				<br><i>International Journal of Theoretical Physics</i>, Vol. 60, pp. 3599–3608, Aug. 16, 2021.</li>
+				<li>C.-W. Tsai, C.-W. Yang, J. Lin, Y.-C. Chang*, and R.-S. Chang, 
+				<br><a href="https://www.mdpi.com/2076-3417/11/9/3767" target="_blank">Quantum Key Distribution Networks: Challenges and Future Research Issues in Security</a>, 
+				<br><i>Applied Sciences</i>, Vol. 11, No. 9, 3767, Apr. 22, 2021.</li>
+				<li>C.-W. Tsai, J. Lin, and C.-W. Yang*, 
+				<br><a href="https://link.springer.com/article/10.1007/s11128-021-03047-7" target="_blank">Cryptanalysis and Improvement in Semi-quantum Private Comparison Based on Bell States</a>, 
+				<br><i>Quantum Information Processing</i>, Vol. 20, No. 3, pp. 1-14, Mar. 24, 2021.</li>
+				<li>W. Hong, J. Chen, P.-S. Chang, J. Wu, T.-S. Chen, and J. Lin*, 
+				<br><a href="https://ieeexplore.ieee.org/document/9306802" target="_blank">A Color Image Authentication Scheme with Grayscale Invariance</a>, 
+				<br><i>IEEE Access</i>, Vol. 9, pp. 6522-6535, Dec. 24, 2020.</li>
+				<li>J. Lin, X. Wang, Z. Wang, D. Beyette, and J.-C. Liu*, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3345399" target="_blank">Prediction of Mathematical Expression Declarations Based on Spatial, Semantic, and Syntactic Analysis</a>, 
+				<br><i>Proceedings of the 19th ACM Symposium on Document Engineering (DocEng'19)</i>, Berlin, Germany, Sept. 23-26, 2019.</li>
+				<li>J. Lin, X. Wang, and J.-C. Liu*, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3229106" target="_blank">Prediction of Mathematical Expression Constraints (ME-Con)</a>, 
+				<br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
+				<li>X. Wang, J. Lin, R. Vrecenar, and J.-C. Liu*, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3229116" target="_blank">QuQn Map: Qualitative-Quantitative Mapping of Scientific Papers</a>, 
+				<br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
+				<li>S.-H. Kao, J. Lin, C.-W. Tsai, and T. Hwang*, 
+				<br><a href="https://link.springer.com/article/10.1007/s10773-018-3715-5" target="_blank">An Improved Protocol for Controlled Deterministic Secure Quantum Communication Using Five-Qubit Entangled State</a>, 
+				<br><i>International Journal of Theoretical Physics</i>, Vol. 57, No. 6, pp. 1894-1902, Mar. 10, 2018.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Invited Talks</h3>
+			<ul>
+				<li>"人工智慧於工控設備數據異常檢測的應用", AI人工智慧教師專業社群, 中國醫藥大學, Oct. 20, 2021.</li>
+				<li>"數學語言處理", 產業論壇課程演講活動, 國立台中科技大學, Mar. 10, 2021.</li>
+				<li>"美國留學經驗分享", 教育、媒體與科技課程演講活動, 中國醫藥大學, Oct. 27, 2020.</li>
+				<li>"Mining of Coreference Relations between Mathematical Objects and Textual Declarations in a Document", AI人工智慧教師專業社群, 中國醫藥大學, Sept. 23, 2020.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Short-term Programs</h3>
+			<ul>
+				<li>通訊與網路安全課程, 國立中興大學, Nov. 3 - Nov. 5, 2021.</li>
+				<li>資通安全概論課程, 健行科技大學, Aug. 4 - Aug. 6, 2021.</li>
+				<li>AI人工智慧語言Python程式設計課程, 外商發格自動化股份有限公司, Nov. 19 - Dec. 31, 2020.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Contact Information</h3>
+			<ul>
+				<!-- This is a comment -->
+				<li>Phone: (04)2284-0497 ext 912</li>
+				<li>Email: <a href="mailto:jasonlin@cs.nchu.edu.tw">jasonlin@cs.nchu.edu.tw</a></li>
+			</ul>
+		</div>
+		<div>
+			<a href="https://info.flagcounter.com/2DJw"><img src="https://s01.flagcounter.com/count2/2DJw/bg_FFFFFF/txt_000000/border_878787/columns_5/maxflags_15/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+		</div>
+	</body>
+</html>

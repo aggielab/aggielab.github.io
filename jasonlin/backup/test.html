@@ -1,0 +1,121 @@
+<html>
+	<head>
+        <title>Jason Lin</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var url = $('iframe').attr('src');
+                $('iframe').hide();
+                $('button').hide();
+                
+                $('#hide').click(function(){
+                    $('iframe').attr('src', '').hide();
+                    $('button').hide();
+                });
+                
+                $('#show').click(function(){
+                    $('iframe').attr('src', url).show();
+                    $('button').show();
+                });
+            });
+        </script>
+    </head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <body bgcolor="#E6E6FA">
+        <div>
+            <img src="profile/me.jpg" alt="Profile picture" height="150" width="150" />
+        </div>
+        <div>
+            <h3>About Me</h3>
+            <p>Howdy! My name is Jason Lin (<a href="https://www.linkedin.com/in/senyalin" target="_blank">LinkedIn</a>) (<a href="https://scholar.google.com/citations?user=IZN6B38AAAAJ&hl=en" target="_blank">Google Scholar</a>). I am currently a PhD candidate under the supervision of Professor Jyh-Charn Liu in the <a href="https://engineering.tamu.edu/cse/" target="_blank">Department of Computer Science and Engineering</a> at <a href="https://www.tamu.edu/" target="_blank">Texas A&M University</a>, College Station, TX.</p>
+        </div>
+        <div>
+            <h3>Research Interests</h3>
+        </div>
+        <div align="center">
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+        </div>
+        <div align="center">
+            <button style="height:25px; width:50px" id="hide">Hide</button>
+        </div>      
+        <div>
+            <p>My research mainly focuses on the fundamental issues of <a href="https://en.wikipedia.org/wiki/Document_engineering" target="_blank">Document Engineering</a> and the use of <a id="show" class="" href='#'>Business Process Mining</a> techniques 
+            to extract the relational properties of textual descriptions and mathematical objects from STEM (<u>S</u>cience, <u>T</u>echnology, <u>E</u>ngineering, and <u>M</u>athematics) publications.
+            Before diving into this field, I was actively involved in ONR-sponsored research that developed a situational awareness system based on <a href="https://en.wikipedia.org/wiki/Geospatial_intelligence" target="_blank">Geospatial Intelligence</a> and conflict events to model the tactical behavior of asymmetric warfare.
+            Besides, I also have done a lot of research in <a href="https://en.wikipedia.org/wiki/Quantum_cryptography" target="_blank">Quantum Cryptography</a> and published several papers in prestigious journals.
+			Please feel free to contact me if you need any further information.</p>
+        </div>
+        <div>
+            <h3>Selected Recent Publications</h3>
+            <ul>
+                <li>Jason Lin, Xing Wang, Zelun Wang, Donald Beyette, and Jyh-Charn Liu, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3345399" target="_blank">Prediction of Mathematical Expression Declarations Based on Spatial, Semantic, and Syntactic Analysis</a>, 
+				<br><i>Proceedings of the 19th ACM Symposium on Document Engineering (DocEng'19)</i>, Berlin, Germany, Sept. 23-26, 2019.</li>
+				<li>Donald Beyette, Zelun Wang, Jason Lin, and Jyh-Charn Liu, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3345426" target="_blank">Semi-automatic LaTeX-Based Labeling of Mathematical Objects in PDF Documents: MOP Data Set</a>, 
+				<br><i>Proceedings of the 19th ACM Symposium on Document Engineering (DocEng'19)</i>, Berlin, Germany, Sept. 23-26, 2019.</li>
+				<li>Zelun Wang, Donald Beyette, Jason Lin, and Jyh-Charn Liu, 
+				<br><a href="https://icdar2019.org/list-of-accepted-papers/" target="_blank">Extraction of Math Expressions from PDF Documents Based on Unsupervised Modeling of Fonts</a>, 
+				<br><i>Proceedings of the 15th International Conference on Document Analysis and Recognition (ICDAR'19)</i>, Sydney, Australia, Sept. 20-25, 2019.</li>
+				<li>Donald Beyette, Michael Rugh, Jason Lin, Xing Wang, Zelun Wang, Jyh-Charn Liu, and Robert Capraro, 
+				<br><a href="https://www.asee.org/public/conferences/140/papers/25558/view" target="_blank">DIME: A Dynamic Interactive Mathematical Expression Tool for STEM Education</a>, 
+				<br><i>Proceedings of the 126th ASEE Annual Conference and Exposition (ASEE'19)</i>, Tampa, Florida, June 16-19, 2019.</li>
+                <li>Xing Wang, Jason Lin, Ryan Vrecenar, and Jyh-Charn Liu, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3229116" target="_blank">QuQn Map: Qualitative-Quantitative Mapping of Scientific Papers</a>, 
+				<br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
+				<li>Jason Lin, Xing Wang, and Jyh-Charn Liu, 
+				<br><a href="https://dl.acm.org/citation.cfm?id=3229106" target="_blank">Prediction of Mathematical Expression Constraints (ME-Con)</a>, 
+				<br><i>Proceedings of the 18th ACM Symposium on Document Engineering (DocEng'18)</i>, Halifax, Nova Scotia, Canada, Aug. 28-31, 2018.</li>
+				<li>Xing Wang, Jason Lin, Ryan Vrecenar, and Jyh-Charn Liu, 
+				<br><a href="https://ieeexplore.ieee.org/abstract/document/8244676" target="_blank">Syntactic Role Identification of Mathematical Expressions</a>, 
+				<br><i>Proceedings of the 12th International Conference on Digital Information Management (ICDIM'17)</i>, pp. 179-184, Fukuoka, Japan, Sept. 12-14, 2017.</li>
+				<li>Jason Lin, Benke Qu, Xing Wang, Stephen George, and Jyh-Charn Liu, 
+				<br><a href="https://senyalin.github.io/research/109_preprint.pdf" target="_blank">Strategic Planning and Tactical Situational Awareness Using MECH</a>, 
+				<br><i>Proceedings of the 20th International Command and Control Research and Technology Symposium (ICCRTS)</i>, Annapolis, MD, June 16-19, 2015.</li>
+				<li>Xing Wang, Jason Lin, Stephen George, and Jyh-Charn Liu, 
+				<br><a href="https://senyalin.github.io/research/104_preprint.pdf" target="_blank">DT-GIS System for Tactical Pattern Exploration in Asymmetric Conflicts</a>, 
+				<br><i>Proceedings of the 20th International Command and Control Research and Technology Symposium (ICCRTS)</i>, Annapolis, MD, June 16-19, 2015.</li>
+				<li>Xing Wang, Stephen George, Jason Lin, and Jyh-Charn Liu, 
+				<br><a href="https://link.springer.com/chapter/10.1007/978-3-319-16268-3_57" target="_blank">Quantifying Tactical Risk: A Framework for Statistical Classification Using MECH</a>, 
+				<br><i>Proceedings of the 8th International Conference on Social Computing, Behavioral-Cultural Modeling, and Prediction (SBP'15)</i>, pp. 446-451, Washington, DC, Mar. 31-Apr. 3, 2015.</li>
+				<li>Jason Lin, Benke Qu, Xing Wang, Stephen George, and Jyh-Charn Liu, 
+				<br><a href="https://link.springer.com/chapter/10.1007/978-3-319-16268-3_42" target="_blank">Risk Management in Asymmetric Conflict: Using Predictive Route Reconnaissance to Assess and Mitigate Threats</a>, 
+				<br><i>Proceedings of the 8th International Conference on Social Computing, Behavioral-Cultural Modeling, and Prediction (SBP'15)</i>, pp. 350-355, Washington, DC, Mar. 31-Apr. 3, 2015.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Funding Sources</h3>
+            <ul>
+                <li><a href="https://www.energy.gov/sites/prod/files/2017/06/f34/TexasAM_TIMER_FactSheet.pdf" target="_blank">Timing Intrusion Management Ensuring Resiliency (TIMER)</a>, 
+				<br>DOE, Jyh-Charn Liu (Co-PI), 2016-2019, $4.4 million.</li>
+				<li><a href="https://senyalin.github.io/report/pact.pdf" target="_blank">Probabilistic Forecast Tracking and Calibration Software System</a>, 
+				<br>Apache Corporation, Jyh-Charn Liu (Co-PI), 2017-2018, $112k.</li>
+				<li><a href="https://govtribe.com/award/federal-contract-award/definitive-contract-fa875016c0200" target="_blank">Context Aware Mission Auditing System</a>, 
+				<br>AFRL, Jyh-Charn Liu (PI), 2016-2017, $35k.</li>
+				<li><a href="https://apps.dtic.mil/docs/citations/ADA623600" target="_blank">MECH: Algorithms and Tools for Automated Assessment of Potential Attack Locations</a>, 
+				<br>ONR, Jyh-Charn Liu (PI), 2012-2015, $622k.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Teaching Activities</h3>
+            <ul>            
+                <li>TA for CSCE 121-500 Introduction to Program Design and Concepts (Fall 2018) (Spring 2019) (Fall 2019)</li>
+                <li>TA for CSCE 221-500 Data Structures and Algorithms (Spring 2016)</li>
+                <li>TA for CSCE 629-600 Analysis of Algorithms (Fall 2015)</li>
+                <li>TA for CSCE 411-500 Design and Analysis of Algorithms (Spring 2015)</li>
+                <li>TA for CSCE 222-500 Discrete Structures for Computing (Fall 2014) <a href="http://faculty.cse.tamu.edu/davis/csce222_fall14.html" target="_blank">Instruction page</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <!-- This is a comment -->
+                <li>Email: <a href="mailto:senyalin@email.tamu.edu">senyalin@tamu.edu</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="http://s01.flagcounter.com/more/dAxF"><img src="//s01.flagcounter.com/count/dAxF/bg_FFFFFF/txt_000000/border_000000/columns_3/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+        </div>
+    </body>
+</html>

@@ -724,6 +724,11 @@ a.sb.heart,
 	background-image: url(images/heart.png);
 }
 
+a.sb.homepage,
+.sb a.homepage {
+	background-image: url(images/homepage.png);
+}
+
 a.sb.instagram,
 .sb a.instagram {
 	background-image: url(images/instagram.png);
@@ -762,6 +767,11 @@ a.sb.star,
 a.sb.vimeo,
 .sb a.vimeo {
 	background-image: url(images/vimeo.png);
+}
+
+a.sb.website,
+.sb a.website {
+	background-image: url(images/website.png);
 }
 
 /* white icons */

@@ -20,9 +20,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
+				var url_qc = $('#iframe_qc').attr('src');
 				var url_tm = $('#iframe_tm').attr('src');
 				var url_pm = $('#iframe_pm').attr('src');
-				var url_qc = $('#iframe_qc').attr('src');
 				
 				$('iframe').hide();
 				$('button').hide();
@@ -30,6 +30,13 @@
 				$('#hide').click(function(){
 					$('iframe').attr('src', '').hide();
 					$('button').hide();
+				});
+				
+				$('#show_qc').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_qc').attr('src', url_qc).show();
+					$('button').show();
 				});
 				
 				$('#show_tm').click(function(){
@@ -44,14 +51,7 @@
 					//$('button').hide();
 					$('#iframe_pm').attr('src', url_pm).show();
 					$('button').show();
-				});
-				
-				$('#show_qc').click(function(){
-					$('iframe').attr('src', '').hide();
-					//$('button').hide();
-					$('#iframe_qc').attr('src', url_qc).show();
-					$('button').show();
-				});                
+				});               
 			});
 		</script>
 	</head>
@@ -67,28 +67,34 @@
 			<p align="justify">Howdy! My name is Jason Lin (林傑森). I graduated from <a href="https://www.tamu.edu" target="_blank">Texas A&M University</a> with a PhD in <a href="https://engineering.tamu.edu/ce/index.html" target="_blank">Computer Engineering</a>.
 			<br>I joined the <a href="http://www.cs.nchu.edu.tw" target="_blank">Department of Computer Science and Engineering</a> at the <a href="https://www.nchu.edu.tw" target="_blank">National Chung Hsing University</a> as a tenure-track faculty member in February 2021.
 		</div>
+		<div class="wrap">
+			<div class="col-1">
+				<div align="center">
+					<iframe id="iframe_qc" width="640" height="480" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="3" allowfullscreen=""></iframe>
+					<iframe id="iframe_tm" width="640" height="480" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
+					<iframe id="iframe_pm" width="640" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+				</div>
+				<div align="center">
+					<button style="height:25px; width:100px" id="hide">Close Frame</button>
+				</div>
+			</div>
+		</div>
 		<div>
 			<h3>Research Interests</h3>
 		</div>
-		<div align="center">
-			<iframe id="iframe_tm" width="854" height="480" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
-			<iframe id="iframe_pm" width="854" height="480" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
-			<iframe id="iframe_gi" width="854" height="480" src="https://www.youtube.com/embed/-8keqUuxT6Y" frameborder="3" allowfullscreen=""></iframe>
-			<iframe id="iframe_qc" width="854" height="480" src="https://www.youtube.com/embed/WVv5OAR4Nik" frameborder="3" allowfullscreen=""></iframe>
-		</div>
-		<div align="center">
-			<button style="height:25px; width:50px" id="hide">Close</button>
-		</div>
 		<div align="justify">
-            <p align="justify">My current research in AI mainly focuses on the following three tracks: <br>(1) The development of <a id="show_tm" class="" href='#'>Text Mining</a> software to deal with the fundamental issues of scientific document understanding; 
-			<br>(2) The study of <a id="show_pm" class="" href='#'>Process Mining</a> techniques to address security and efficiency issues in management information systems; <br>(3) The applications of machine learning to solve agricultural problems in practice. 
-			<br>Apart from the above research, I have also studied security issues in <a id="show_qc" class="" href='#'>Quantum Computing</a> and published several significant results in prestigious journals.
+            <p align="justify">My current research mainly focuses on various security issues in <a id="show_qc" class="" href='#'>Quantum Computing</a>. 
+			<br>So far, I have published several significant results in prestigious journals. 
+			<br>Apart from the above research, I have also studied some practical research of AI including: 
+			<br>(1) The development of <a id="show_tm" class="" href='#'>Text Mining</a> tools to deal with scientific document understanding; 
+			<br>(2) The study of <a id="show_pm" class="" href='#'>Process Mining</a> techniques to discover workflow models in IT systems; 
+			<br>(3) The applications of machine learning to address agricultural problems in practice. 
 			<br>Please feel free to shoot me an email if you need any further information.</p>
 		</div>
 		<div>
 			<h3>For Prospective Students</h3>
-			<p align="justify">We are actively looking for self-motivated students to join our team at the Advanced Computing Laboratory (<a href="https://aggielab.github.io" target="_blank">先進計算實驗室</a>).
-			<br>People with basic experiences in either Cryptography or Artificial Intelligence will be preferred.
+			<p align="justify">We are actively looking for self-motivated students to join our team at the <a href="https://aggielab.github.io" target="_blank">Information Security Laboratory</a> (ISLab).
+			<br>People with basic experiences in either Cryptography or AI is a plus.
 			<br>You are more than welcome to pay a visit to our lab at Room 922B in the Science Building of the Main Campus.</p>
 			<!-- <ul>
 				<li><img src="icon/new.gif" width="28" border="0" height="11">預約面談指導教授 (<a href="https://forms.gle/uipJb14dw5ugetECA" target="_blank">研究生版</a>) (<a href="https://forms.gle/o8TmwNgBDer9bThC6" target="_blank">專題生版</a>)
@@ -140,7 +146,6 @@
 		<div>
 			<h3>Invited Talks</h3>
 			<ul>
-				<li>"淺談量子通訊安全", 微課程演講活動, 市立台中一中, Sept. 30, 2022.</li>
 				<li>"淺談量子密碼學的技術與突破", 第三十二屆全國資訊安全會議, 國立勤益科技大學, June 17, 2022.</li>
 				<li>"大數據與人工智慧應用之我見", 智慧財產權與生醫產業, 中國醫藥大學, June 14, 2022.</li>
 				<li>"人工智慧於工控設備數據異常檢測的應用", AI人工智慧教師專業社群, 中國醫藥大學, Oct. 20, 2021.</li>

@@ -50,53 +50,58 @@
 			</div>
 			<div class="row-fluid">
 				<div class="span10 offset1">
-					<section id="images">
-						<div class="page-header">
-							<h3>Events & Activities</h3>
+					<div class="page-header">
+						<h3>Events & Activities</h3>
+					</div>
+					<section id="images">	
+						<!-- <div class="row-fluid">
+							<ul class="thumbnails da-thumbs">
+								<li class="span6">
+									<a title="..." href="images/none.png" class="thumbnail" >
+										<img src="images/none.png" style="width: 400px; height: 300px;">            
+									</a>
+									<p class="caption" style="text-align:center">...</p>
+								</li>
+								<li class="span6">
+									<a title="..." href="images/none.png" class="thumbnail" >
+										<img src="images/none.png" style="width: 400px; height: 300px;">            
+									</a>
+									<p class="caption" style="text-align:center">...</p>
+								</li>
+							</ul>
+						</div> -->
+						<div class="row-fluid">
+							<ul class="thumbnails da-thumbs">
+								<li class="span6">
+									<a title="2022/09/02 實驗室迎新 拿坡里披薩" href="images/20220902.jpg" class="thumbnail" >
+										<img src="images/20220902.jpg" style="width: 400px; height: 300px;">            
+									</a>
+									<p class="caption" style="text-align:center">2022/09/02 實驗室迎新 拿坡里披薩</p>
+								</li>
+								<li class="span6">
+									<a title="2022/01/20 實驗室聚餐 陶板屋" href="images/20220120.jpg" class="thumbnail" >
+										<img src="images/20220120.jpg" style="width: 400px; height: 300px;">            
+									</a>
+									<p class="caption" style="text-align:center">2022/01/20 實驗室聚餐 陶板屋</p>
+								</li>
+							</ul>
 						</div>
 						<div class="row-fluid">
 							<ul class="thumbnails da-thumbs">
 								<li class="span6">
-									<a href="images/20220120.jpg" class="thumbnail" >
-										<img src="images/20220120.jpg" style="width: 403px; height: 286px;">            
+									<a title="2020/12/10 至弘光科技大學擔任109年度多元專題競賽評審" href="images/20201210.jpg" class="thumbnail" >
+										<img src="images/20201210.jpg" style="width: 400px; height: 300px;">            
 									</a>
-									<p class="caption"> 2022/01/20 實驗室聚餐 陶板屋 </p>
+									<p class="caption" style="text-align:center">2020/12/10 至弘光科技大學擔任109年度多元專題競賽評審</p>
 								</li>
-								<!-- <li class="span6">
-									<a title="..."  href="images/20220120.jpg" class="thumbnail" >
-										<img src="images/20220120.jpg" style="width: 403px; height: 286px;">            
+								<li class="span6">
+									<a title="2020/09/25 至中國醫藥大學參加量子資通訊的研討會" href="images/20200925.jpg" class="thumbnail" >
+										<img src="images/20200925.jpg" style="width: 400px; height: 300px;">            
 									</a>
-									<p class="caption"> ... </p>
-								</li> -->
+									<p class="caption" style="text-align:center">2020/09/25 至中國醫藥大學參加量子資通訊的研討會</p>
+								</li>
 							</ul>
 						</div>
-						<!-- <div class="row-fluid">
-							<ul class="thumbnails da-thumbs">
-								<li class="span6">
-									<a href="images/20220120.jpg" class="thumbnail" >
-										<img src="images/20220120.jpg" style="width: 310px; height: 220px;">            
-									</a>
-									<p class="caption"> 2022/01/20 實驗室聚餐 陶板屋 </p>
-								</li>
-								<li class="span6">
-									<a title="..."  href="images/20220120.jpg" class="thumbnail" >
-										<img src="images/20220120.jpg" style="width: 310px; height: 220px;">            
-									</a>
-									<p class="caption"> ... </p>
-								</li>
-							</ul>
-						</div> -->
-				</section>
-            </div>
-         </div>
-		 
-			<div class="row-fluid">
-				<div class="span10 offset1">
-					<section id="schedule">
-
-
-
-
 					</section>
 				</div>
 			</div>
@@ -116,22 +121,22 @@
 				</div>
 			</div>
 		</footer>
-      <!-- Le javascript
-         ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <!--<script src="js/jquery-1.9.1.min.js"></script>-->
-      <script src="js/jquery-1.9.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/blueimp-gallery.min.js"></script>
-      <script>
-         document.getElementById('images').onclick = function (event) {
-          event = event || window.event;
-          var target = event.target || event.srcElement,
-              link = target.src ? target.parentNode : target,
-              options = {index: link, event: event},
-              links = this.getElementsByTagName('a');
-          blueimp.Gallery(links, options);
-         };
-      </script>
+		<!-- Le javascript
+        ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!--<script src="js/jquery-1.9.1.min.js"></script>-->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/blueimp-gallery.min.js"></script>
+		<script>
+		document.getElementById('images').onclick = function (event) {
+			event = event || window.event;
+			var target = event.target || event.srcElement,
+			link = target.src ? target.parentNode : target,
+			options = {index: link, event: event},
+			links = this.getElementsByTagName('a');
+			blueimp.Gallery(links, options);
+		};
+		</script>
 	</body>
 </html>

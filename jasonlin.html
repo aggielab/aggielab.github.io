@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -31,8 +30,8 @@
 		<script>
 			$(document).ready(function(){
 				var url_qc = $('#iframe_qc').attr('src');
-				var url_tm = $('#iframe_tm').attr('src');
 				var url_pm = $('#iframe_pm').attr('src');
+				var url_tm = $('#iframe_tm').attr('src');
 				
 				$('iframe').hide();
 				$('button').hide();
@@ -49,19 +48,19 @@
 					$('button').show();
 				});
 				
-				$('#show_tm').click(function(){
-					$('iframe').attr('src', '').hide();
-					//$('button').hide();
-					$('#iframe_tm').attr('src', url_tm).show();
-					$('button').show();
-				}); 
-				
 				$('#show_pm').click(function(){
 					$('iframe').attr('src', '').hide();
 					//$('button').hide();
 					$('#iframe_pm').attr('src', url_pm).show();
 					$('button').show();
-				});              
+				});
+				
+				$('#show_tm').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_tm').attr('src', url_tm).show();
+					$('button').show();
+				});               
 			});
 		</script>
 	</head>
@@ -96,10 +95,10 @@
 		<div align="justify">
             <p align="justify">My current research mainly focuses on the design of security protocols in <a id="show_qc" class="" href='#'>Quantum Computing</a>. 
 			<br>So far, I have published several significant results in prestigious journals and international conferences. 
-			<br>Apart from the above research, I have also worked on some real-life problems in cross disciplines that require AI solutions including such as: 
-			<br>(1) The development of <a id="show_tm" class="" href='#'>Text Mining</a> tools to deal with scientific document understanding; 
-			<br>(2) The applications of deep learning techniques to address some practical problems in agricultural fields; 
-			<br>(3) The study of <a id="show_pm" class="" href='#'>Business Process Mining</a> techniques to discover workflow models in IT systems.
+			<br>In addition to the aforementioned research, I have also worked on real-life cross-disciplinary problems that require AI solutions, including: 
+			<br>(1) The study of <a id="show_pm" class="" href='#'>Business Process Mining</a> algorithms to discover workflow models in IT systems; 
+			<br>(2) The application of data analysis techniques to address practical problems in agricultural fields; 
+			<br>(3) The development of <a id="show_tm" class="" href='#'>Text Mining</a> tools for automatic understanding of scientific documents. 
 			</p>
 		</div>
 		<div>
@@ -171,6 +170,7 @@
 		<div>
 			<h3>Teaching</h3>
 			<ul>
+				<li>Quantum Information</li>
 				<li>Cryptography</li>
 				<li>Artificial Intelligence</li>
 				<li>Database Systems</li>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Jason Lin</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Le styles -->
+		<link rel="stylesheet" href="css/social-buttons.css">
+		<style>	
+			.wrap {
+				display: flex;
+				align-items: center;
+			}
+			 
+			.col-0 {
+				float: left;
+				width: 550px;
+			}
+			 
+			.col-1 {
+				float: left;
+				width: 250px;
+			}
+			 
+			.col-2 {
+				float: left;
+				width: 150px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var url_qc = $('#iframe_qc').attr('src');
+				var url_pm = $('#iframe_pm').attr('src');
+				var url_tm = $('#iframe_tm').attr('src');
+				
+				$('iframe').hide();
+				$('button').hide();
+				
+				$('#hide').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('button').hide();
+				});
+				
+				$('#show_qc').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_qc').attr('src', url_qc).show();
+					$('button').show();
+				});
+				
+				$('#show_pm').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_pm').attr('src', url_pm).show();
+					$('button').show();
+				});
+				
+				$('#show_tm').click(function(){
+					$('iframe').attr('src', '').hide();
+					//$('button').hide();
+					$('#iframe_tm').attr('src', url_tm).show();
+					$('button').show();
+				});               
+			});
+		</script>
+	</head>
+	<body bgcolor="#E6E6FA">
+		<div>
+			<a class="thumbnail">
+				<img class="thumbnail" src="profile/me.png" alt="Profile picture" height="150" width="150">
+			</a>
+			<img src="gif/mouse.gif" alt="Scared mouse" height="75" width="75" align="right" style="margin-top:75px">
+		</div>
+		<div>
+			<h3>About Me</h3>
+			<p align="justify">Howdy! My name is Jason Lin (林傑森). I graduated from <a href="https://www.tamu.edu" target="_blank">Texas A&M University</a> with a PhD in <a href="https://engineering.tamu.edu/ce/index.html" target="_blank">Computer Engineering</a>.
+			<br>I have joined the <a href="http://www.cs.nchu.edu.tw" target="_blank">Department of Computer Science and Engineering</a> at <a href="https://www.nchu.edu.tw" target="_blank">National Chung Hsing University</a> as a faculty member since February 1, 2021.
+			<br>Please feel free to shoot me an email if you need any further information.</p>
+		</div>
+		<div class="wrap">
+			<div class="col-0">
+				<div align="center">
+					<iframe id="iframe_qc" width="480" height="360" src="https://www.youtube.com/embed/7Nf7ly95mFg" frameborder="3" allowfullscreen=""></iframe>
+					<iframe id="iframe_tm" width="480" height="360" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
+					<iframe id="iframe_pm" width="480" height="360" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+				</div>
+				<div align="center">
+					<button style="height:25px; width:100px" id="hide">Close Frame</button>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>Research Interests</h3>
+		</div>
+		<div align="justify">
+            <p align="justify">My current research mainly focuses on the design of security protocols in <a id="show_qc" class="" href='#'>Quantum Communication</a>. 
+			<br>So far, I have published several significant results in prestigious journals and international conferences. 
+			<br>In addition to the aforementioned research, I have also worked on real-life cross-disciplinary problems, including: 
+			<br>(1) The study of <a id="show_pm" class="" href='#'>Business Process Mining</a> algorithms to discover workflow models in IT systems; 
+			<br>(2) The application of data analysis techniques to address practical problems in the agricultural field; 
+			<br>(3) The development of <a id="show_tm" class="" href='#'>Text Mining</a> tools for the automatic understanding of scientific documents. 
+			</p>
+		</div>
+		<div>
+			<h3>For Prospective Students</h3>
+			<p align="justify">We are actively looking for self-motivated students to join our team at the <a href="https://aggielab.github.io" target="_blank">Information Security Laboratory</a>.
+			<br>Students with fundamental knowledge in either cryptography or AI will be a plus. 
+			<br>You are more than welcome to pay a visit to our lab at Room 922B in the College of Science Building.</p>
+			<ul>
+				<!-- <li><img src="icon/new.gif" width="28" border="0" height="11"><font color="red"><b>112學年度碩士班一般生已收滿，由於實驗室的空間與資源有限，目前暫不考慮超收！</b></font></li> -->
+				<!-- <li><img src="icon/new.gif" width="28" border="0" height="11">歡迎對本實驗室研究領域有興趣的同學填寫<a href="https://forms.gle/Rnh13VBmakRezTd16" target="_blank">線上表單</a>預約訪談時間!</li> -->
+			</ul>
+		</div>
+		<div>
+			<h3>Sponsored Research Projects</h3>
+			<ul>
+				<li><u>動態可調變多方量子秘密分享協定之研究</u><br>
+				個別型研究計畫, 112-2221-E-005-048, 國科會, 2023/08/01 ~ 2024/07/31.</li>
+				<li><u>基於身分認證及可信度驗證之晶片安全設計方法(1/2)</u><br>
+				整合型研究計畫, 112-2634-F-005-001-MBK, 國科會, 2023/06/01 ~ 2024/05/31.</li>
+				<li><u>智慧永續新農業研究發展中心(2/2)</u><br>
+				整合型研究計畫, 111-2634-F-005-001, 國科會, 2022/11/01 ~ 2023/10/31.</li>
+				<li><u>工業生產線冰水主機智慧節能控制與異常預警機制</u><br>
+				產學合作計畫, 111-D-595, 金元威能源科技, 2022/10/01 ~ 2022/12/31.</li>
+				<li><u>植基於自適應索引編碼的多媒體安全技術之研究</u><br>
+				個別型研究計畫, 111-2221-E-005-048, 國科會, 2022/08/01 ~ 2023/10/31.</li>
+				<li><u>智慧製造之主動式偵測與防禦系統研究(2/2)</u><br>
+				整合型研究計畫, 111-2218-E-005-007-MBK, 國科會, 2022/05/01 ~ 2023/07/31.</li>
+				<li><u>智慧永續新農業研究發展中心(1/2)</u><br>
+				整合型研究計畫, 110-2634-F-005-006, 國科會, 2021/11/01 ~ 2022/10/31.</li>
+				<li><u>STEM文件中數學內容的自動化分析與理解之研究</u><br>
+				個別型研究計畫, 110-2222-E-005-006, 國科會, 2021/11/01 ~ 2022/10/31.</li>
+				<li><u>輸配電業成立電力交易試行平台之電力調度費合理性分析</u><br>
+				產學合作計畫, 110-D-259, 台灣綜合研究院, 2021/10/01 ~ 2022/02/28.</li>
+				<li><u>智慧製造之主動式偵測與防禦系統研究(1/2)</u><br>
+				整合型研究計畫, 110-2218-E-005-008-MBK, 國科會, 2021/05/01 ~ 2022/07/31.</li>
+				<!-- <li><u></u><br>
+				計畫類型, 計畫編號, 贊助單位, 0000/00/00 ~ 0000/00/00.</li> -->
+			</ul>
+		</div>
+		<div>
+			<h3>Sponsored Student Projects</h3>
+			<ul>
+				<li><u>基於深度卷積神經網路之農業害蟲檢測</u><br>
+				大專學生研究計畫, 112-2813-C-005-007-E, 國科會, 2023/07/01 ~ 2024/02/29.</li>
+				<li><u>基於啟發式演算法之數學內容轉換</u><br>
+				大專學生研究計畫, 111-2813-C-005-024-E, 國科會, 2022/07/01 ~ 2023/02/28.</li>
+				<li><u>迴歸模型於冰水主機系統異常檢測之研究</u><br>
+				大專學生研究計畫, 111-28157-H, 國立中興大學, 2022/07/01 ~ 2022/12/31.</li>
+				<li><u>BERT模型壓縮加速</u><br>
+				大專學生研究計畫, 110-2813-C-005-088-E, 國科會, 2021/07/01 ~ 2022/02/28.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Honors and Awards</h3>
+			<ul>
+				<li>榮獲111學年度優良勞作教育導師 (2022).</li>
+				<li>指導學生榮獲「2022 GiCS 第2屆尋找資安女婕思」優勝 (2022).</li>
+				<li>榮獲110學年度優良勞作教育導師 (2021).</li>
+				<li>ACM DocEng Best Student Paper Award (2019).</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Invited Talks</h3>
+			<ul>
+				<li>"淺談動態量子秘密分享協定之研究", 量子科技研討會, 國立中興大學, July 7, 2023.</li>
+				<li>"淺談AI與ChatGPT", 產業論壇課程演講活動, 國立台中科技大學, May 24, 2023.</li>
+				<li>"資訊相關科系與出路之介紹", 資訊學群講座, 私立南光高中, Dec. 1, 2022.</li>
+				<li>"淺談量子密碼學的技術與突破", 第三十二屆全國資訊安全會議, 國立勤益科技大學, June 17, 2022.</li>
+				<li>"大數據與人工智慧應用之我見", 智慧財產權與生醫產業課程演講活動, 中國醫藥大學, June 14, 2022.</li>
+				<li>"人工智慧於工控設備數據異常檢測的應用", 人工智慧教師專業社群, 中國醫藥大學, Oct. 20, 2021.</li>
+				<li>"數學語言處理", 產業論壇課程演講活動, 國立台中科技大學, Mar. 10, 2021.</li>
+				<li>"美國留學經驗分享", 教育、媒體與科技課程演講活動, 中國醫藥大學, Oct. 27, 2020.</li>
+				<li>"挖掘文件中數學物件和文字敘述之間共指關係的研究", 人工智慧教師專業社群, 中國醫藥大學, Sept. 23, 2020.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Short-term Programs</h3>
+			<ul>
+				<li>量子資訊與密碼學, 國立中興大學, Aug. 28 – Sept. 1, 2023.</li>
+				<li>資通安全概論, 國立中興大學, July 26 – July 28, 2023.</li>
+				<li>資訊安全與密碼學, 第二專長學分班, July 3 – July 26, 2023.</li>
+				<li>人工智慧入門與應用, 國立中興大學, Aug. 22 – Aug. 24, 2022.</li>
+				<li>程式設計與解題技巧, 市立台中一中, Mar. 3 – Apr. 14, 2022.</li>
+				<li>通訊與網路安全, 國立中興大學, Nov. 3 – Nov. 5, 2021.</li>
+				<li>資通安全概論, 健行科技大學, Aug. 4 – Aug. 6, 2021.</li>
+				<li>人工智慧語言Python程式設計, 發格自動化, Nov. 19 – Dec. 31, 2020.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Teaching</h3>
+			<ul>
+				<li>Cryptography</li>
+				<li>Artificial Intelligence</li>
+				<li>Database Systems</li>
+				<li>Business Information Management</li>
+				<li>MATLAB Programming</li>
+				<li>Object-Oriented Programming</li>
+				<li>Structured Programming</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Review Services</h3>
+			<ul>
+				<li>IEEE Intelligent Systems (SCIE, Q1)</li>
+				<li>ACM Computing Surveys (SCIE, Q1)</li>
+				<li>Mathematics (SCIE, Q1)</li>
+				<li>Quantum Information Processing (SCIE, Q1)</li>
+				<li>Applied Sciences (SCIE, Q2)</li>
+				<li>Electronics (SCIE, Q2)</li>
+				<li>Entropy (SCIE, Q2)</li>
+				<li>IEEE Access (SCIE, Q2)</li>
+				<li>Symmetry (SCIE, Q2)</li>
+				<li>International Journal of Theoretical Physics (SCIE, Q3)</li>
+				<li>Modern Physics Letters A (SCIE, Q3)</li>
+				<li>Photonics (SCIE, Q3)</li>
+				<li>International Journal of Ad Hoc and Ubiquitous Computing (SCIE, Q4)</li>
+				<li>Algorithms (ESCI, N/A)</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Professional Services</h3>
+			<ul>
+				<li>Session Chair, Asia Joint Conference on Information Security (AsiaJCIS 2023), Aug. 15, 2023.</li>
+				<li>Guest Editor, Special Issue "<a href="https://www.mdpi.com/journal/mathematics/special_issues/M5Q329TIJ8" target="_blank">Quantum Cryptography and Applications</a>" of Mathematics, 2023.</li>
+				<li>專業顧問, 元福聯合科技, Oct. 1, 2022 – Sept. 30, 2023.</li>
+				<li>專業顧問, 金元威能源科技, Oct. 1, 2022 – Sept. 30, 2023.</li>
+				<li>Program Committee, International Computer Symposium (ICS 2022), 2022.</li>
+				<li>Guest Host, Symposium on Digital Life Technologies (DLT 2022), May 13, 2022.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Memberships</h3>
+			<ul>
+				<li>Life Member, 中華民國資訊安全學會, 2022.</li>
+				<li>Life Member, 台灣E化資安分析管理協會, 2021.</li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<div class="col-1">
+				<h3>Contact Information</h3>
+				<ul>
+					<!-- This is a comment -->
+					<a href="mailto:jasonlin@cs.nchu.edu.tw" class="sb email">Email</a>
+					<a href="https://www.linkedin.com/in/drjslin" class="sb linkedin" target="_blank">LinkedIn</a>
+					<a href="https://www.instagram.com/drjslin" class="sb instagram" target="_blank">Instagram</a>
+					<li><b>Office: </b>Science Building 913</li>
+					<li><b>Phone: </b>04-22840497 ext 913</li>
+					<li><b>Fax: </b>04-22853869</li>
+				</ul>
+			</div>			
+			<div class="col-2">
+				<img src="gif/snoopy.gif" alt="Snoopy dog" height="120" width="142" style="margin-top:30px; float:left;">
+			</div>
+		</div>
+		<div>
+			<a href="https://info.flagcounter.com/2DJw"><img src="https://s01.flagcounter.com/count2/2DJw/bg_FFFFFF/txt_000000/border_878787/columns_5/maxflags_15/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+		</div>
+	</body>
+</html>

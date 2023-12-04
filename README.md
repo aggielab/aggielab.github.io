@@ -6,9 +6,9 @@ This is a research lab website template that can be used by university professor
 It was built using the libraries provided below:
 
 - [Twitter Bootstrap (v2.3.1)] (https://github.com/twbs/bootstrap)
-- [blueimp Gallery (v1.3.0)] (https://github.com/blueimp/Gallery)
+- [Fancybox Gallery] (https://fancyapps.com/)
 
-The stock photos used within the template are from [Unsplash] (https://unsplash.com/). 
+The stock photos used within the template are from [Unsplash] (https://unsplash.com/)
 
 The CSS social buttons are from [Nick La] (http://webdesignerwall.com/tutorials/css-social-buttons)
 

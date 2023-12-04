@@ -5,8 +5,8 @@ This is a research lab website template that can be used by university professor
 
 It was built using the libraries provided below:
 
-- [Twitter Bootstrap (v2.3.1)] (https://github.com/twbs/bootstrap)
-- [Fancybox Gallery] (https://fancyapps.com/)
+- [Twitter Bootstrap] (https://github.com/twbs/bootstrap)
+- [Fancybox Gallery]  (https://fancyapps.com/)
 
 The stock photos used within the template are from [Unsplash] (https://unsplash.com/)
 

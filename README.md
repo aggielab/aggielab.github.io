@@ -3,10 +3,6 @@
 
 This is a research lab website template that can be used by university students / professors to create a simple website for showing and displaying their labs / research. 
 
-You can find a live view of the template using the link below:
-
-https://photonlines.github.io/Research-Lab-Website/
-
 It was built using the libraries provided below:
 
 - [Twitter Bootstrap (v2.3.1)] (https://github.com/twbs/bootstrap)

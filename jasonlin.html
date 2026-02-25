@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Jason Lin</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Le styles -->
+		<link rel="stylesheet" href="css/social-buttons.css">
+		<style>
+			.wrap {
+				display: flex;
+				align-items: center;
+			}
+			 
+			.col-0 {
+				float: left;
+				width: 550px;
+			}
+			 
+			.col-1 {
+				float: left;
+				width: 250px;
+			}
+			 
+			.col-2 {
+				float: left;
+				width: 150px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var url_qc = $('#iframe_qc').attr('src');
+				var url_pm = $('#iframe_pm').attr('src');
+				var url_tm = $('#iframe_tm').attr('src');
+				
+				$('iframe').hide();
+				$('button').hide();
+				
+				$('#hide').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('button').hide();
+				});
+				
+				$('#show_qc').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_qc').attr('src', url_qc).show();
+					$('button').show();
+				});
+				
+				$('#show_pm').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_pm').attr('src', url_pm).show();
+					$('button').show();
+				});
+				
+				$('#show_tm').click(function(){
+					$('iframe').attr('src', '').hide();
+					$('#iframe_tm').attr('src', url_tm).show();
+					$('button').show();
+				});               
+			});
+		</script>
+	</head>
+	<body bgcolor="#E6E6FA">
+		<div>
+			<a class="thumbnail">
+				<img class="thumbnail" src="profile/me.png" alt="Profile picture" height="150" width="150">
+			</a>
+			<img src="gif/mouse.gif" alt="Scared mouse" height="75" width="75" align="right" style="margin-top:75px">
+		</div>
+		<div>
+			<h3>About Me</h3>
+			<p align="justify">Howdy! My name is Jason Lin (林傑森). I received my Ph.D. in <a href="https://engineering.tamu.edu/ce/index.html" target="_blank">Computer Engineering</a> from <a href="https://www.tamu.edu" target="_blank">Texas A&M University</a>, College Station. 
+			<br>I am currently a faculty member in the <a href="http://www.cs.nchu.edu.tw" target="_blank">Department of Computer Science and Engineering</a> at <a href="https://www.nchu.edu.tw" target="_blank">National Chung Hsing University</a>, Taichung. 
+			<br>Please feel free to contact me if you need any further information.</p>
+		</div>
+		<div class="wrap">
+			<div class="col-0">
+				<div align="center">
+					<iframe id="iframe_qc" width="480" height="360" src="https://www.youtube.com/embed/7Nf7ly95mFg" frameborder="3" allowfullscreen=""></iframe>
+					<iframe id="iframe_tm" width="480" height="360" src="https://www.youtube.com/embed/I3cjbB38Z4A" frameborder="3" allowfullscreen=""></iframe>
+					<iframe id="iframe_pm" width="480" height="360" src="https://www.youtube.com/embed/7oat7MatU_U" frameborder="3" allowfullscreen=""></iframe>
+				</div>
+				<div align="center">
+					<button style="height:25px; width:100px" id="hide">Close Frame</button>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>Research Interests</h3>
+		</div>
+		<div align="justify">
+            <p align="justify">My current research mainly focuses on the design of security protocols in <a id="show_qc" class="" href='#'>Quantum Communication</a>. 
+			<br>So far, I have published several significant results in prestigious journals and international conferences. 
+			<br>In addition to the aforementioned research, I have also worked on real-life cross-disciplinary problems, including: 
+			<br>(1) The study of <a id="show_pm" class="" href='#'>Business Process Mining</a> algorithms to discover workflow models in IT systems; 
+			<br>(2) The application of data analysis techniques to address practical problems in the agricultural field; 
+			<br>(3) The development of <a id="show_tm" class="" href='#'>Text Mining</a> tools for the automatic understanding of scientific documents. 
+			</p>
+		</div>
+		<div>
+			<h3>For Prospective Students</h3>
+			<p align="justify">We are actively looking for self-motivated students to join our team at the <a href="https://aggielab.github.io" target="_blank">Information Security Laboratory</a>.
+			<br>Students with a strong foundation in either mathematics or programming will be preferred. 
+			<br>You are more than welcome to pay a visit to our lab at Room 922B in the <a href="https://maps.app.goo.gl/UThLqUZReu1be6JN7" target="_blank">College of Science Building</a>.</p>
+		</div>
+		<div>
+			<h3>Honors and Awards</h3>
+			<ul>
+				<li>榮獲 114 學年度教學特優教師</li>
+				<li>榮獲 113 學年度電機資訊學院傑出教學教師</li>
+				<li>榮獲 113 學年度優聘教師</li>
+				<li>榮獲 112 學年度電機資訊學院優良導師</li>
+				<li>榮獲 112 學年度電機資訊學院傑出教學教師</li>
+				<li>榮獲 111 學年度優良勞作教育導師</li>
+				<li>榮獲 110 學年度優良勞作教育導師</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Student Achievements</h3>
+			<ul>
+				<li>指導學生張允、洪慧珊、洪維駿參加 2025 年資安技能金盾獎–入圍決賽</li>
+				<li>指導學生張峻逢參加 2025 年第十八屆崇越論文大賞：AI 論文競賽–榮獲特優論文獎</li>
+				<li>指導學生張峻逢、羅承瑄與丁維德參加 2025 年 IEEE CIS Student Grand Competition–榮獲佳作</li>
+				<li>指導學生王睿毅與邱睿棋參加 2025 年國立中興大學資訊工程學系專題競賽–榮獲佳作</li>
+				<li>指導學生邱奕勛與張可玟參加 2025 年國立中興大學資訊工程學系專題競賽–榮獲佳作</li>
+				<li>指導學生陳威融、林守昱、丁柏瑋、李昀澔參加 2025 年第六屆台積電校園黑客松–榮獲第三名</li>
+				<li>指導學生沈龍翔、文偉君、白千宜、許孝甄、賴珮俞參加 2024 年興創競技場創新創業競賽–榮獲潛力無限獎</li>
+				<li>指導學生丁柏瑋、李昀澔、黃郁珽參加 2024 年資安技能金盾獎–入圍決賽</li>
+				<li>指導學生丁柏瑋參加教育部 113 年度教育體系資安攻防演練–榮獲佳作</li>
+				<li>指導學生張峻逢與羅承瑄參加 2024 年 IEEE CIS Student Grand Competition–榮獲第一名</li>
+				<li>指導學生陳泓羽申請 113 年度國科會大專學生研究計畫–榮獲補助</li>
+				<li>指導學生梁珉毓與張芸婕參加 2024 年國立中興大學資訊工程學系專題競賽–榮獲第三名</li>
+				<li>指導學生丁柏瑋參加 2024 年 AIS3 MyFirstCTF 初階資安攻防演練–榮獲潛力獎</li>
+				<li>指導學生沈龍翔、文偉君、賴佩俞、羅鴻陞、許孝甄參加 2024 年第七屆致青春‧創未來全國選拔大賽–榮獲優等獎</li>
+				<li>指導學生陳威融參加 2024 年校內資訊工程學系校園健康路跑–榮獲男子組第四名</li>
+				<li>指導學生張辰瑜申請 2024 年資訊安全學會賴溪松教授論文獎–榮獲碩士組佳作</li>
+				<li>指導學生黃仲永、沈龍翔、梁欣宇參加 2024 年 E 化系統創意應用競賽–榮獲優選</li>
+				<li>指導學生丁柏瑋參加 2024 年 Taiwan Security Club CTF–榮獲校內第一名</li>
+				<li>指導學生廖唯亘、顏美燕、林守昱、呂維參加 2024 年第五屆台積電校園黑客松–入圍決賽</li>
+				<li>指導學生黃紹綸、唐暐哲、謝立宇、張家維參加 2024 年第五屆台積電校園黑客松–入圍決賽</li>
+				<li>指導學生廖唯亘與呂維參加 2024 年 KKCompany Music Challenge: Next-5 Songcraft 競賽–入圍決賽</li>
+				<li>指導學生丁柏瑋、廖唯亘、謝立宇參加 2023 年資安技能金盾獎–入圍決賽</li>
+				<li>指導學生丁柏瑋、廖唯亘、張家維、黃仲永、唐暐哲、謝立宇、沈龍翔、陳力群參加 2023 年校內興程式競賽跨領域合作進階組–榮獲銀獎</li>
+				<li>指導學生丁維德、羅承瑄、陳又霆、張峻逢、林昆頡參加 2023 年第 28 屆 InnoServe 競賽資訊應用組–榮獲第二名</li>
+				<li>指導學生林柏辰申請 112 年度國科會大專學生研究計畫–榮獲補助</li>
+				<li>指導學生張哲豪參加 2023 年科技論文競賽人工智慧與資訊安全領域–榮獲佳作</li>
+				<li>指導學生黃紹綸、唐暐哲、謝立宇、張家維參加 2023 年第四屆台積電校園黑客松–入圍決賽</li>
+				<li>指導學生黃志翰申請 111 年度校內大專學生研究計畫–榮獲補助</li>
+				<li>指導學生廖若凱參加 2022 年校內興程式競賽–榮獲佳作</li>
+				<li>指導學生林新紘申請 111 年度國科會大專學生研究計畫–榮獲補助</li>
+				<li>指導學生林新紘與廖若凱參加 2022 年國立中興大學資訊工程學系專題競賽–榮獲第一名</li>
+				<li>指導學生許雅筑、吳沛潔、陳宣穎參加 2022 年科技部第 2 屆尋找資安女婕思（GiCS）資安闖天關大專校院組–榮獲優勝</li>
+				<li>指導學生方郁婷申請 110 年度科技部大專學生研究計畫–榮獲補助</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Invited Talks</h3>
+			<ul>
+				<li>"Content Analysis and Reverse Engineering of Digital Documents", 資訊工程系科技新知講座, 國立雲林科技大學, Oct. 8, 2025.</li>
+				<li>"從台灣走向世界：我的留學生活與文化體驗", 資訊工程研究所專題演講, 國立台中科技大學, Oct. 2, 2025.</li>
+				<li>"Intelligent Document Processing: From Mathematical Symbols to LaTeX Expressions", 國際人工智慧管理研究所專題演講, 國立雲林科技大學, May 27, 2025.</li>
+				<li>"自動化文件處理的應用與發展", 人文與科技專題研究課程演講, 中國醫藥大學, Feb. 25, 2025.</li>
+				<li>"量子密碼學的談古論今", 資通訊領域智慧創新教師成長社群, 國立台中科技大學, Nov. 12, 2024.</li>
+				<li>"量子資訊於智慧計算之應用", 健康大數據之智能應用課程演講, 國立中興大學, July 22, 2024.</li>
+				<li>"生成式人工智慧在高等教育的影響與應用", 人文與科技專題研究課程演講, 中國醫藥大學, Apr. 23, 2024.</li>
+				<li>"智慧系統安全防護示範課程教材簡介", 資安實務示範課程教學分享與種子教師研習營, 南投惠蓀林場, Jan. 16, 2024.</li>
+				<li>"量子密碼學之現況與未來挑戰", 資訊工程學系專題演講, 東海大學, Nov. 3, 2023.</li>
+				<li>"如何做科學研究", 資訊科技閱讀寫作技巧課程演講活動, 國立台中科技大學, Oct. 24, 2023.</li>
+				<li>"A Brief Discussion on the Research of Dynamic Quantum Secret Sharing Protocols", 量子科技研討會, 國立中興大學, July 7, 2023.</li>
+				<li>"淺談 AI 與 ChatGPT", 產業論壇課程演講活動, 國立台中科技大學, May 24, 2023.</li>
+				<li>"資訊工程專業領域分享", 資工營營隊演講, 國立中興大學, Feb. 5, 2023.</li>
+				<li>"資訊相關科系與出路之介紹", 資訊學群講座, 南光高中, Dec. 1, 2022.</li>
+				<li>"淺談量子密碼學的技術與突破", 第三十二屆全國資訊安全會議, 國立勤益科技大學, June 17, 2022.</li>
+				<li>"大數據與人工智慧應用之我見", 智慧財產權與生醫產業課程演講活動, 中國醫藥大學, June 14, 2022.</li>
+				<li>"人工智慧於工控設備數據異常檢測的應用", 人工智慧教師專業社群, 中國醫藥大學, Oct. 20, 2021.</li>
+				<li>"數學語言處理", 產業論壇課程演講活動, 國立台中科技大學, Mar. 10, 2021.</li>
+				<li>"美國留學經驗分享", 教育、媒體與科技課程演講活動, 中國醫藥大學, Oct. 27, 2020.</li>
+				<li>"Mining of Coreference Relations Between Mathematical Objects and Textual Declarations in a Document", 人工智慧教師專業社群, 中國醫藥大學, Sept. 23, 2020.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Short-term Programs</h3>
+			<ul>
+				<li>資通安全概論, 資安職能訓練課程, 國立中興大學, Sept. 11 – 13, 2024.</li>
+				<li>量子資訊與密碼學, 暑期微課程, 國立中興大學, Aug. 30 – Sept. 5, 2024.</li>
+				<li>資通安全概論, 資安職能訓練課程, 國立中興大學, May 15 – 17, 2024.</li>
+				<li>量子資訊與密碼學, 暑期微課程, 國立中興大學, Aug. 28 – Sept. 1, 2023.</li>
+				<li>資通安全概論, 資安職能訓練課程, 國立中興大學, July 26 – 28, 2023.</li>
+				<li>資訊安全與密碼學, 第二專長學分班, 國立中興大學, July 3 – 26, 2023.</li>
+				<li>人工智慧入門與應用, 暑期微課程, 國立中興大學, Aug. 22 – 24, 2022.</li>
+				<li>程式設計與解題技巧, 高中微課程, 市立台中一中, Mar. 3 – Apr. 14, 2022.</li>
+				<li>通訊與網路安全, 資安職能訓練課程, 國立中興大學, Nov. 3 – 5, 2021.</li>
+				<li>資通安全概論, 資安職能訓練課程, 健行科技大學, Aug. 4 – 6, 2021.</li>
+				<li>Python 程式設計, 業界短期課程, Fagor Automation, Nov. 19 – Dec. 31, 2020.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Review Services</h3>
+			<ul>
+				<li>ACM Computing Surveys (SCIE, Q1)</li>
+				<li>Advanced Quantum Technologies (SCIE, Q1)</li>
+				<li>Applied Energy (SCIE, Q1)</li>
+				<li>Chinese Journal of Physics (SCIE, Q1)</li>
+				<li>EPJ Quantum Technology (SCIE, Q1)</li>
+				<li>IEEE Intelligent Systems (SCIE, Q1)</li>
+				<li>IEEE Transactions on Communications (SCIE, Q1)</li>
+				<li>IEEE Transactions on Consumer Electronics (SCIE, Q1)</li>
+				<li>Mathematics (SCIE, Q1)</li>
+				<li>Measurement (SCIE, Q1)</li>
+				<li>Optical and Quantum Electronics (SCIE, Q1)</li>
+				<li>Quantum Information Processing (SCIE, Q1)</li>
+				<li>Quantum Science and Technology (SCIE, Q1)</li>
+				<li>Scientific Reports (SCIE, Q1)</li>
+				<li>Algorithms (ESCI, Q2)</li>
+				<li>Applied Sciences (SCIE, Q2)</li>
+				<li>Computers (SCIE, Q2)</li>
+				<li>Electronics (SCIE, Q2)</li>
+				<li>Entropy (SCIE, Q2)</li>
+				<li>Future Internet (ESCI, Q2)</li>
+				<li>IEEE Access (SCIE, Q2)</li>
+				<li>Information (ESCI, Q2)</li>
+				<li>Modern Physics Letters A (SCIE, Q2)</li>
+				<li>Multimedia Tools and Applications (SCIE, Q2)</li>
+				<li>New Journal of Physics (SCIE, Q2)</li>
+				<li>Physica Scripta (SCIE, Q2)</li>
+				<li>PLoS One (SCIE, Q2)</li>
+				<li>Sensors (SCIE, Q2)</li>
+				<li>Symmetry (SCIE, Q2)</li>
+				<li>Discover Computing, formerly Information Retrieval Journal (SCIE, Q3)</li>
+				<li>International Journal of Theoretical Physics (SCIE, Q3)</li>
+				<li>Photonics (SCIE, Q3)</li>
+				<li>International Journal of Ad Hoc and Ubiquitous Computing (SCIE, Q4)</li>
+				<li>Quantum Information & Computation (SCIE, Q4)</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Professional Services</h3>
+			<ul>
+				<li>Session Chair, International Conference on Security and Information Technologies with AI, Internet Computing and Big-data Applications (SITAIBA 2025), Nov. 22, 2025.</li>
+				<li>Program Committee Member, Taiwan Academic Network Conference (TANET 2025), Sept. 14 – 19, 2025.</li>
+				<li>Guest Editor, Collection "<a href="https://link.springer.com/collections/fhefddgbjf" target="_blank">Quantum Secure Computation and Communication</a>" of Discover Quantum Science, Jul. 21, 2025 – Apr. 21, 2026.</li>
+				<li>Guest Editor, Collection "<a href="https://link.springer.com/collections/fhefddgbjf" target="_blank">Quantum Secure Computation and Communication</a>" of Discover Physics, Jul. 21, 2025 – Apr. 21, 2026.</li>
+				<li>Program Committee Member, Cryptology and Information Security Conference (CISC 2025), Apr. 21 – May 16, 2025.</li>
+				<li>Program Committee Member, International Computer Symposium (ICS 2024), July 25 – Aug. 12, 2024.</li>
+				<li>Session Chair, Asia Joint Conference on Information Security (AsiaJCIS 2024), Aug. 13, 2024.</li>
+				<li>Organizing Co-Chair, Asia Joint Conference on Information Security (AsiaJCIS 2024), Aug. 13 – 14, 2024.</li>
+				<li>Session Chair, Asia Joint Conference on Information Security (AsiaJCIS 2023), Aug. 15, 2023.</li>
+				<li>Guest Editor, Special Issue "Quantum Cryptography and Applications" of Mathematics, Dec. 9, 2022 – Apr. 30, 2025.</li>
+				<li>Professional Consultant, Genesys Technology, Oct. 1, 2022 – Sept. 30, 2023.</li>
+				<li>Professional Consultant, KYW Energy Tech, Oct. 1, 2022 – Sept. 30, 2023.</li>
+				<li>Program Committee Member, International Computer Symposium (ICS 2022), Oct. 11 – 23, 2022.</li>
+				<li>Guest Host, Symposium on Digital Life Technologies (DLT 2022), May 13, 2022.</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Memberships</h3>
+			<ul>
+				<li>Life Member, Chinese Cryptology and Information Security Association, 2022.</li>
+				<li>Life Member, E-Security Analysis and Management Association, 2021.</li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<div class="col-1">
+				<h3>Contact Information</h3>
+				<ul>
+					<!-- This is a comment -->
+					<a href="mailto:jasonlin@cs.nchu.edu.tw" class="sb email">Email</a>
+					<a href="https://scholar.google.com/citations?user=SROJJx0AAAAJ" class="sb google-scholar" target="_blank">Google</a>
+					<a href="https://github.com/drjslin" class="sb github" target="_blank">GitHub</a>
+					<a href="https://www.linkedin.com/in/drjslin" class="sb linkedin" target="_blank">LinkedIn</a>
+					<a href="https://www.instagram.com/drjslin" class="sb instagram" target="_blank">Instagram</a>
+					<li><b>Office: </b>Science Building 912</li>
+					<li><b>Phone: </b>04-22840497 ext 912</li>
+					<li><b>Fax: </b>04-22853869</li>
+				</ul>
+			</div>			
+			<div class="col-2">
+				<img src="gif/snoopy.gif" alt="Snoopy dog" height="120" width="142" style="margin-top:30px; float:left;">
+			</div>
+		</div>
+		<div>
+			<a href="https://info.flagcounter.com/2DJw"><img src="https://s01.flagcounter.com/count2/2DJw/bg_FFFFFF/txt_000000/border_878787/columns_5/maxflags_15/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+		</div>
+	</body>
+</html>
